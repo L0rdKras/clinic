@@ -1,0 +1,6 @@
+{
+	"Servidor" : "localhost",
+	"usuario" : "root",
+	"clave" : "MataReyes",
+	"bd" : "clinic"
+}

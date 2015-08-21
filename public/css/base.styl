@@ -1,0 +1,126 @@
+@import 'nib/vendor'
+
+vendor-prefixes = o ms mz webkit official
+
+body
+	//background linear-gradient(135deg, #eeeeee 0%,#eeeeee 100%)
+	#contenedor
+		background linear-gradient(45deg, #ffffff 0%,#e5e5e5 100%)
+		margin 0 auto
+		width 1100px
+		padding .5em 3em
+		border-radius 20px		
+		border 1px solid black
+		.cuadro_logeo
+			.campo_logeo
+				display inline-block
+				width 100px
+				font-weight bolder
+		.datos_ingreso
+			border 1px solid black
+			border-radius 10px
+			padding .3em
+			margin-top 10px
+		.muestra_tabla
+			overflow auto
+			height 250px
+		ul
+			margin 0px
+			list-style none
+			display inline-block
+			li
+				background-color lightblue
+				padding 1em
+				border-radius 20px
+				margin-bottom 5px
+				a
+					text-decoration none
+					color black
+				a:hover
+					color red
+	footer
+		padding 4em 2em
+		border-top #37d0ca 10px solid
+		background-color #3ea5a1
+		color white
+		font-size 12px
+		text-weight bolder
+		margin-top 2em
+	header
+		padding 1em 3em
+		background linear-gradient(135deg, #e1ffff 0%,#e1ffff 7%,#e1ffff 12%,#fdffff 12%,#e6f8fd 30%,#c8eefb 54%,#bee4f8 75%,#b1d8f5 100%);
+		margin-bottom .7em
+		border-bottom #37d0ca 10px solid
+		h1
+			display inline-block
+			font-family 'Open Sans', sans-serif
+			a
+				color #3ea5a1
+				text-decoration none
+		.sesion
+			float right
+			.boton_salir
+				background-color white
+	table
+		background-color white
+		width 100%
+		text-align center
+		tr
+			td
+				border 1px solid black
+.nombre_dato
+	background-color black
+	color white
+.valor_dato
+	background-color white
+	color red
+	font-weight bolder				
+.waiting
+	background-color white
+	color red
+	border 3px solid black
+	padding 2em
+	border-radius 20px
+#modal_horas
+	background-color white
+	border 2px solid black
+	border-radius 20px
+	padding 2em
+	.ver_tabla_pacientes
+		height 300px
+		border 1px solid black
+		width 600px
+		overflow auto
+	.datos_ingreso
+		border 1px solid black
+		border-radius 10px
+		padding .3em
+		margin-top 10px
+.estado_Reservado
+	background-color yellow
+	margin 0px
+	padding .3em
+	border-radius 10px
+.estado_Confirmado
+	background-color lightblue
+	margin 0px
+	padding .3em
+	border-radius 10px
+.estado_Llego
+	background-color green
+	color white
+	margin 0px
+	padding .3em
+	border-radius 10px
+.estado_Ausente
+	background-color red
+	color white
+	margin 0px
+	padding .3em
+	border-radius 10px
+.estado_Cancelo
+	background-color black
+	color red
+	margin 0px
+	padding .3em
+	border-radius 10px
