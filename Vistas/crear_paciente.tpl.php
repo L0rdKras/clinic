@@ -1,11 +1,12 @@
 <h2><?= $titulo?></h2>
 
 <div class="datos_ingreso" id="data_ingreso">
-	<p>Rut : <input type="text" id="rut"></p>
+	<p>Rut : <input type="text" id="rut"> <button id="busca_paciente">Busca</button></p>
 	<p>Nombres : <input type="text" id="nombres"></p>
 	<p>Apelidos : <input type="text" id="apellidos"></p>
 	<p>Telefono : <input type="text" id="telefono"></p>
 	<p>Direccion : <input type="text" id="direccion"></p>
+	<p>E-mail : <input type="email" id="email_paciente"></p>
 
 	<p>
 		Empresa : 

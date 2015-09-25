@@ -7,6 +7,7 @@ class Paciente{
 	public $rut;
 	public $phone;
 	public $address;
+	public $email;
 	public $company_id;
 
 	public function __construct(){
@@ -27,6 +28,7 @@ class Paciente{
 			$this->phone = $respuesta[0]["phone"];
 			$this->address = $respuesta[0]["address"];
 			$this->company_id = $respuesta[0]["company_id"];
+			$this->email = $respuesta[0]["email"];
 			return true;
 		}
 		return false;

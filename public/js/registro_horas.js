@@ -16,7 +16,9 @@ function ver_dia(dia){
 		url : "invocador.php?app=registro_horas&funcion=carga_dia",
 		data : {dia:dia},
 		success : function(datos){
-			$("#registro_dia").html(datos);
+			$("#registro_dia").html(datos).promise().done(function(){
+				accion_boton("btn_imprimir_dia",imprimir_dia,[dia]);
+			});
 		}
 	});
 }
@@ -130,12 +132,19 @@ function confirma_pedido_hora()
 				data : {atencion:atencion,dia:dia,horario:horario,segundo_bloque:segundo_bloque,paciente:paciente},
 				success : function(datos)
 				{
-					if(datos == "Guardo")
-					{
-						location.reload();
-					}else{
+					try{
+						var info = JSON.parse(datos);
+
+						if(info.respuesta == "Guardo")
+						{
+							abrir_pdf(info.id);
+							alert("Reserva de hora completa");
+							location.reload();
+						}
+					}catch(e){
 						alert(datos);
 					}
+					
 				}
 			});
 		}
@@ -212,4 +221,14 @@ function borra_reserva()
 			}
 		});
 	}
+}
+
+function abrir_pdf(id)
+{
+	window.open("imprimir_reserva.php?id="+id);
+}
+
+function imprimir_dia(dia)
+{
+	window.open("imprimir_dia.php?dia="+dia);
 }

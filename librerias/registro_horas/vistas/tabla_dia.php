@@ -1,3 +1,8 @@
+<p>
+	<button id="btn_imprimir_dia">
+		Imprimir
+	</button>
+</p>
 <table>
 	<tr>
 		<td>HORARIO</td>

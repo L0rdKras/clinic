@@ -7,12 +7,12 @@ if(file_exists("../Controller/master.php")){
 	$usuario = new Usuario();
 
 	$data = array(
-		"nick" => "admin",
-		"nombre" => "Admin",
-		"clave" => "claveAdmin",
-		"cargo" => "Admin",
-		"email" => "admin@admin.cl",
-		"estado" => "1"
+		"nick" 		=> "admin",
+		"nombre" 	=> "Admin",
+		"clave"	 	=> "claveAdmin",
+		"cargo" 	=> "Admin",
+		"email" 	=> "admin@admin.cl",
+		"estado" 	=> "1"
 		);
 
 	if($usuario->crear($data))

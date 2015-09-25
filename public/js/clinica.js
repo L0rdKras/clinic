@@ -3,6 +3,9 @@ $(document).ready(function() {
     funciones_login();
     //funciones_logout();
     activar_al_enter("rut",revisa_rut);
+    accion_boton("busca_paciente",buscar_paciente,[]);
+
+    activar_al_enter("rut_empresa",revisa_rut_empresa);
     accion_boton("btn_ver_dia",carga_dia,[]);
 });
 
